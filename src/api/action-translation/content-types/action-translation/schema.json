@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "action_translations",
+  "info": {
+    "singularName": "action-translation",
+    "pluralName": "action-translations",
+    "displayName": "Action Translation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Login": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "default": "Login"
+    }
+  }
+}

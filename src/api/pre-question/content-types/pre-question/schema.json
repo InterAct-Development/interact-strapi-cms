@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pre_questions",
+  "info": {
+    "singularName": "pre-question",
+    "pluralName": "pre-questions",
+    "displayName": "Pre Question",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "question_answers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::question-answer.question-answer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

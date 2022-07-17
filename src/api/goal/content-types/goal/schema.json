@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goals",
+  "info": {
+    "singularName": "goal",
+    "pluralName": "goals",
+    "displayName": "Goal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "goal_title": {
+      "type": "string"
+    },
+    "answers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.goal-answers"
+    },
+    "during_answers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.goal-answers"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "pretest_questionnaire_pages",
+  "info": {
+    "singularName": "pretest-questionnaire-page",
+    "pluralName": "pretest-questionnaire-pages",
+    "displayName": "Pretest Questionnaire Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "pre_questions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pre-question.pre-question"
+    }
+  }
+}
